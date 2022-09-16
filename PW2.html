@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/material-rounded/344/physics-wallah.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Physics Wallah</title>
+    <style>
+        .heading {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            width: 100%;
+            height: 500px;
+            border: 3px solid black;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Physics Wallah</h1>
+
+    <div class="container">
+        <table class="table table-bordered border-dark mt-5">
+            <thead>
+                <tr>
+                    <th scope="col" class="pl-3">S No.</th>
+                    <th scope="col" class="pl-3">File Name</th>
+                    <th scope="col" class="pl-3">File Size</th>
+                    <th scope="col" class="pl-3">Detail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="pl-4">1</th>
+                    <td>Physics Assignment</td>
+                    <td>5 bytes</td>
+                    <td><button title="Physics Assignment, .zip, 5 bytes, This PC/Desktop/PW2" type="button" class="btn btn-info">Info</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-4">2</th>
+                    <td>Chemistry Assignment</td>
+                    <td>7.5 kB</td>
+                    <td><button title="Chemistry Assignment, .xml, 7.5 kB, This PC/Desktop/PW2" type="button" class="btn btn-info">Info</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-4">3</th>
+                    <td>Math Assignment</td>
+                    <td>9 MB</td>
+                    <td><button title="Math Assignment, .pdf, 9 MB, This PC/Desktop/PW2" type="button" class="btn btn-info">Info</button></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-4">4</th>
+                    <td>IT Assignment</td>
+                    <td>2.4 MB</td>
+                    <td><button title="IT Assignment, .docx, 2.4 MB, This PC/Desktop/PW2" type="button" class="btn btn-info">Info</button></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="pl-4">5</th>
+                    <td>Computer Assignment</td>
+                    <td>1.8 TB</td>
+                    <td><button title="Computer Assignment, .txt, 1.8 TB, This PC/Desktop/PW2" type="button" class="btn btn-info">Info</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Sorting script here-->
+    <script>
+        var file1 = {
+                extension: "docx",
+                extension: "pdf",
+                extension: "txt",
+                extension: "xml",
+                extension: "zip",
+            }
+            /*var file2 = {
+                firstname: "Chemistry Assignment",
+                extension: "xml",
+                filesize: "7.5 kB"
+            }
+            var file3 = {
+                firstname: "Math Assignment",
+                extension: "pdf",
+                filesize: "9 MB"
+            }
+            var file4 = {
+                firstname: "ComputerScience Assignment",
+                extension: "docx",
+                filesize: "2.5 MB"
+            }
+            var file5 = {
+                firstname: "IT Assignment",
+                extension: "txt",
+                filesize: "1.8 TB"
+            }*/
+        file1.sort((a, b) => a.extension.localcompare(b.extension));
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
